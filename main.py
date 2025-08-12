@@ -160,7 +160,7 @@ if __name__ == "__main__":
     # Post startup message to a channel by name
     app.client.chat_postMessage(
         channel=channel_name,
-        text=f"🚗 Parking spot bot is now online with {NUM_SPOTS} spots! Available commands: `Q` (get spot), `SO` (free spot), `CHECK` (check for warnings), `LINE` (show assignments)"
+        text=f"🚗 Parking spot bot is now online with {NUM_SPOTS} spots! Available commands: `Q` (get spot), `SO` (free spot), `CHECK` (check for warnings), `LINE` (show assignments and queue)"
     )
     
     # Start the app in Socket Mode using your app token
