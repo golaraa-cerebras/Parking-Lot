@@ -1,0 +1,3 @@
+cerebras-cloud-sdk
+python-dotenv
+slack_bolt
