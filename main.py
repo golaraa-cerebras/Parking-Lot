@@ -50,8 +50,17 @@ def show_spot_assignments(say):
             lines.append(f"Spot #{spot}: <@{user_id}>")
         else:
             lines.append(f"Spot #{spot}: Available")
-    
     say("\n".join(lines))
+    
+    if len(waiting_queue) > 0:
+        lines = ["🚗 Current queue:"]
+        for item in waiting_queue:
+            lines.append(f"<@{item}>")
+        say("\n".join(lines))
+    else:
+        say("No one is currently in the queue.")
+        
+    
 
 # Case-insensitive message handler
 @app.message()
