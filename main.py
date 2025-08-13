@@ -11,7 +11,7 @@ load_dotenv()
 app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
 
 # Configure the number of spots
-NUM_SPOTS = 2  # Change this number to set how many spots you want
+NUM_SPOTS = 8  # Change this number to set how many spots you want
 
 # Track spot assignments: {spot_number: {'user_id': user_id, 'timestamp': timestamp}}
 spot_assignments = {}
@@ -153,7 +153,7 @@ def send_shutdown_message(channel_name):
 
 if __name__ == "__main__":
     print(f"Bot is starting with {NUM_SPOTS} spots...")
-    channel_name = "#new-channel"  # Replace with your channel name
+    channel_name = "#ev-test"  # Replace with your channel name
     # Register shutdown function
     atexit.register(send_shutdown_message, channel_name)
     
