@@ -92,8 +92,8 @@ def handle_commands(message, say):
         handle_p_command(message, say)
     else:
         # Check for slot down/up commands
-        slot_down_match = re.match(r'^SLOT\s+(\d+)\s+DOWN$', command)
-        slot_up_match = re.match(r'^SLOT\s+(\d+)\s+UP$', command)
+        slot_down_match = re.match(r'^SPOT\s+(\d+)\s+DOWN$', command)
+        slot_up_match = re.match(r'^SPOT\s+(\d+)\s+UP$', command)
         
         if slot_down_match:
             slot_number = int(slot_down_match.group(1))
