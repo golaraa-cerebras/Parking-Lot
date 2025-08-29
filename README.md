@@ -1,2 +1,2 @@
 EV Charger allocator
-This is the backend script for a slackbot called "EV Charger allocator" that helps our team manage EV chargers.
+This is the backend script for a slackbot called "EV Bot" that helps our team manage EV chargers.
